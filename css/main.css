@@ -135,7 +135,6 @@
   animation: loop 50s -25s linear infinite;
 }
 
-
 .loop_wrap img:last-child {
   animation: loop2 50s linear infinite;
 }
