@@ -54,6 +54,7 @@ Vue.component('js-accordion', {
     }
   });
 
+
   new Vue({
     el: '#app1'
   });
