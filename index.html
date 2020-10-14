@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'wgb8rws',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+    <title>Gravis(グラヴィス)|今なら1000円で体験入学！</title>
+</head>
+<body>
+    <div id="wrapper">
+    <header id="header">
+        <div class="flex">
+            <div class="logo">
+                <a href="#top">
+                    <img src="img/gravis_logo.png" alt="Gravis" id="#top">
+                </a>
+            </div>
+            <div class="phone-number pc3">
+                <img src="img/phone-number.jpg" alt="お電話のお問い合わせはコチラ！">
+            </div>
+            <div class="form-btn">
+                <a href="#form">
+                    <img src="img/form-btn1.jpg" alt="申し込みはコチラ！">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="banner" class="text-center">
+            <div class="main-visual">
+                <img src="img/mainvisual1.png" alt="人生も上手くなるダンス" class="main1">
+                <div class="main-visualimg">
+
+                    <img src="img/mainvisual2.png" alt="トップクラスのインストラクター陣" class="main2">
+                    <img src="img/mainvisual3.png" alt="全米チアダンス選手権大会2連覇達成！" class="main3">
+                    <img src="img/mainvisual4.png" alt="全米チアダンス選手権大会コリオグラフィー賞受賞！" class="main4">
+                </div>
+            </div>
+        </div>
+        <div class="loop_wrap">
+            <img src="img/dannsu.jpg"><img src="img/dannsu.jpg">
+        </div>
+        <div class="infographics">
+            <img src="./img/infographics.jpg" alt="あなたの知らない4つのグラヴィス">
+        </div>
+    <section id="empathy">
+        <h2 class="empathy_tit">
+            こんなことに困っていませんか？
+        </h2>
+        <div class="container">
+            <div class="case">
+                <img src="./img/Case1.svg" alt="ケース1">
+            </div>
+            <div class="midasi2">
+                <h3>
+                    教室の雰囲気がわからない
+                </h3>
+            </div>
+            <div class="midasi2_txt">
+                <p>実際の授業を見ていないから教室の雰囲気や指導している
+                    インストラクターの熱意が直に分からないから習わせるのに不安を感じる...
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="case2">
+                <img src="./img/CASE2.svg" alt="ケース2">
+            </div>
+            <div class="midasi3">
+                <h3>
+                    将来性が期待できない
+                </h3>
+            </div>
+            <div class="midasi3_txt">
+                <p>
+                    スポーツで生活するのなんて難しいし、
+                    ダンスを習っていても将来役に立つかわからないから不安...
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="case3">
+                <img src="./img/CASE3.svg" alt="ケース3">
+            </div>
+            <div class="midasi4">
+                <h3>
+                    チアダンスの強みが<br class="sp">分からない
+                </h3>
+            </div>
+            <div class="midasi4_txt">
+                <p>
+                    チアダンスを習ったことでどういう経験ができるのか分からないし、
+                    チアダンスを習ってその経験が社会に対する強みになるのか
+                    いまいち分からなくて不安...
+                </p>
+            </div>
+        </div>
+        <section id="popup">
+            <div class="popup-header">
+                <img src="./img/hukidasi.png" alt="でも大丈夫！">
+                <h2 class="popup_tit">
+                    Gravisに入れば<br>こんなことが実現できます！
+                </h2>
+            </div>
+        <div id="modal">
+            <!--モーダルを開くボタンの部分-->
+            <div class="modalArea">
+                <ul>
+                    <li>
+                        <div class="popup1" @click="showModal = 1">
+                            <img src="./img/popup1.png"  alt="チームのみんなで練習をするからすぐなじめて協調性も学べる！">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="popup2" @click="showModal = 2">
+                            <img src="./img/popup2.png"  alt="集大成の場で成長を実感できる！">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="popup3" @click="showModal = 3">
+                            <img src="./img/popup3.png"  alt="なによりも笑顔が強みで誰よりも素敵になれる！">
+                        </div>
+                    </li>
+                </ul>
+            </div><!--modalArea-->
+         
+            <!--モーダルの中身-->
+            <modal class="modal_all" v-if="showModal == '1'" @close="showModal = false" :key="1">
+                <h3 slot="header">
+
+                    <span>1</span>
+                    <p>
+                        チームのみんなで練習をするから<br>
+                        すぐなじめて協調性も学べる！
+                    </p>
+
+                </h3>
+                <div slot="body">
+                    <p>
+                        チームで踊りを揃える、位置を揃えることは、簡単なようでとても難しいです。なかなかうまくできない子を、得意な子がフォローしたり、お互いにお互いを助け合って1つのダンスが完成します。チームワーク・協調性はチアダンスに必要不可欠！　　　　
+                    </p>
+                </div>
+            </modal>
+            <modal class="modal_all" v-else-if="showModal == '2'" @close="showModal = false" :key="2">
+                <h3 slot="header">
+                    <span>2</span>
+                    <p>
+                        集大成の場で<br>
+                        成長を実感できる！
+                    </p>
+                </h3>
+                <div slot="body">
+                    <p class="txt">
+                        お家でストレッチをするようになったり、復習・練習するようになったり、、、、このすべてがつながっています。発表会もそうです。もちろん本番の舞台での経験は大きいです。でもそこに至るまでにどれだけ努力できるか、楽しいと思える時間を過ごせたかどうか…チャレンジするという選択肢を選ばなかったら見えなかった経験がたくさんあるのです。この成長や変化を実感できることこそが最大のメリットではないでしょうか？
+                    </p>
+                </div>
+            </modal>
+            <modal class="modal_all" v-else-if="showModal == '3'" @close="showModal = false" :key="3">
+                <h3 slot="header">
+                    <span>3</span>
+                    <p>
+                        なによりも笑顔が強みで<br>
+                        誰よりも素敵になれる！
+                    </p>
+                </h3>
+                <div slot="body">
+                    <p>チアダンスと言うからには、”チア”「元気づける、応援する」の言葉どおり、踊っている本人がまず1番に「楽しい、自然と笑顔になる」ということがとっても大切です。そして、笑顔や元気に踊っている姿を見る観客・親御さんが、元気を貰い笑顔があふれてくる。そんな魅力がチアダンスにはあります。</p>
+                </div>
+            </modal>
+        </div><!--modal-->
+        </section>
+        <script type="text/x-template" id="modal-template">
+            <transition name="modal">
+                <div class="modal-mask">
+                    <div class="modal-wrapper" @click.self="$emit('close')">
+                        <div class="modal-container">
+                            <div class="modal-header">
+                                <slot name="header"></slot>
+                            </div>
+    
+                            <div class="modal-body">
+                                <slot name="body"></slot>
+                            </div>
+    
+                            <div class="modal-footer">
+                                <slot name="footer"></slot>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </transition>
+        </script>
+    </section>
+    <!-- mother start -->
+    <section id="mother">
+        <div class="mother_wrap">
+            <div class="ttl_mother">
+                <h2 class="mother_tit">
+                    保護者の声
+                </h2>
+            </div>
+            <div class="contents">
+                <ul class="mother_box">
+                            <li>
+                                <h3>チアダンスの魅力に<br class="tb">惹かれました！</h3>
+                                    <p class="icon_live">
+                                        Rちゃん<br>
+                                        (小学5年生)<br>
+                                        の保護者様
+                                    </p>
+                                <div class="mother_detail">
+                                    <ul>
+                                        <li class="padding-left">
+                                            <p>
+                                                チアダンス
+                                                <br>
+                                            </p>
+                                            <div class="history_txt">
+                                                <span>3</span>
+                                                年
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                HIPHOP
+                                                <br>
+                                            </p>
+                                            <div class="history_txt">
+                                                <span>2</span>
+                                                年
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="thought">
+                                                <p>今の子供の夢は「ROOTS（Gravis内の所属チーム）が全国大会で優勝することです。
+                                                    ROOTSはまだ歴史がなく、1から作り上げている状態なので、これからどうなっていくのか不安もありますが、とても楽しみです。
+                                                    娘は習い始めた当初は全く頭になかった競技としてのチアダンスの世界に魅力を感じ、高い目標を持ち、それに向かって頑張るようになりました。
+                                                    家でも練習メニューを自分で考えて、努力するようになりました。
+                                                    私の夢は、子供達の努力が実って思い描いている「未来」を掴むこと、一緒に見たことのない景色を見ることです。
+                                                </p>
+                                        <div>
+                                            <img src="./img/mother1.png" alt class="pc">
+                                        </div>
+                                    </div>
+                            </div>
+                        </li>
+                    <!-- mother1 end -->
+                    <li>
+                        <div class="icon_live">
+                            <span>
+                                Nちゃん<br>
+                                小学2年生<br>
+                                の保護者様
+                            </span>
+                        </div>
+                        <h3>チアダンスで子供のダンスへの<br class="tb">姿勢が変わりました！</h3>
+                        <div class="mother_detail">
+                            <ul>
+                                <li class="padding-left2">
+                                    <p>
+                                        チアダンス
+                                        <br>
+                                    </p>
+                                    <div class="history_txt">
+                                        <span>1</span>
+                                        年
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="thought grid-item">
+                                <p>
+                                    自分がダンスをしていたのでダンスの楽しさを教えたい、人前でパフォーマンスをする素晴らしさを経験させたいと思いました。
+                                    Gravisは先生方のダンサーとして、振付師としてのレベルの高さが興味を持ったきっかけです。
+                                    体育会ダンスチーム出身というだけあり挨拶、礼儀の指導もしっかりしていただけると思いGravisへの入会を決めました。
+                                    週一回のレッスンでどれだけ上達するのかが心配でした。
+                                    でも子供が夢中になればいくらでも自分で空き時間に練習するので今は心配することはなくなりました。
+                                    最初は人前で踊る時に恥ずかしそうな表情だったのが、段々と「自分を見て欲しい！」というパワーを感じるようになったこと。
+                                </p>
+                                <div>
+                                    <img src="./img/mother2.png" alt class="pc">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- mother2 end -->
+                    <li>
+                        <div class="icon_live">
+                            <span>
+                                Fちゃん<br>
+                                小学2年生<br>
+                                の保護者様
+                            </span>
+                        </div>
+                        <h3>チアダンスで他の保護者とともに<br class="tb">楽しく通えました！</h3>
+                        <div class="mother_detail">
+                            <ul>
+                                <li class="padding-left2">
+                                    <p>
+                                        チアダンス
+                                        <br>
+                                    </p>
+                                    <div class="history_txt">
+                                        <span>2</span>
+                                        年
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="thought grid-item">
+                                <p>
+                                    始める前は、私自身が他の保護者の方々と仲良くなれるか不安がありました。
+                                    今は、そのような事もなく親子共々楽しく通っています。
+                                    下の子にダンスをさせるとしたらどのクラスにいれたらいいか考えているところです。
+                                    私たち、親の夢は、子供たちの成長と、発表会に止まらず色々な大会などにも参加して、結果を残せる嬉しさや、そうできなかった時の悔しさなど、今しかできない経験をたくさんして欲しいと思います。
+                                </p>
+                                <div>
+                                    <img src="./img/mother3.png" alt class="pc pc2">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- mother3 end -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- mother end -->
+    <section id="instructor">
+        <div class="instructor_wrap">
+            <div class="ttl_instructor">
+                <h2 class="instructor_tit">
+                    インストラクター紹介
+                </h2>
+            </div>
+            <!-- swiper slide start -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/yamadarina.jpg" alt="山田里奈" class="instructor_img">
+                        <div class="text">
+                            <span>
+                                実績
+                                <br>
+                            </span>
+                            <p class="p-txt">
+                                全日本学生チアダンス選手権大会2009年総合グランプリ<br>
+                                全米学生チアダンス選手権大会2009年第2位<br>
+                                玉川学園幼稚部・小学部チアダンス指導<br>
+                                全日本学生チアダンス選手権大会2015年部門第3位<br>
+                                玉川大学体育会ダンスドリルチーム振付・指導<br>
+                                全日本学生チアダンス選手権大会2014年部門優勝<br>
+                                全米チアダンス選手権大会2015年3位<br>
+                                全米チアダンス選手権大会2016年部門優勝<br>
+                                全米チアダンス選手権大会2017年部門優勝<br>
+                                アルビレックス新潟振付・指導<br>
+                            </p>
+                        </div>
+                    </div>
+                  <div class="swiper-slide">
+                    <img src="./img/mikawataniyayoi.jpg" alt="三河谷弥生" class="instructor_img">
+                        <div class="text">
+                            <span>
+                                実績
+                                <br>
+                            </span>
+                            <p class="p-txt">
+                                全日本学生チアダンス選手権大会2008年第2位<br>
+                                全米学生チアダンス選手権大会2009年第3位<br>
+                                全米ヨガアライアンスRYT200修了<br>
+                                たまごヨガ認定ティーチャー<br>
+                                RCYT95 キッズヨガTT修了<br>
+                                AEAJ認定アロマテラピー検定1級<br>
+                                JDAC認定ダンス指導員<br>
+                                ミラクルヨガ（羽山隆次氏）指導者養成コース修了<br>
+                                アスリートヨガ初級指導者コース・<br>
+                                ジュニアアスリートヨガコーチ養成講座修了<br>
+                                BESJマットピラティス指導者コース修了<br>
+                            </p>
+                      </div>
+                        </div>
+                  <div class="swiper-slide">
+                    <img src="./img/asadayuri.jpg" alt="浅田佑理" class="instructor_img">
+                        <div class="text">
+                            <span>
+                                実績
+                                <br>
+                            </span>
+                            <p class="p-txt">
+                                全日本学生チアダンス選手権大会2007年部門優勝<br>
+                                全日本学生チアダンス選手権大会2009年総合グランプリ<br>
+                                全米学生チアダンス選手権大会2010年第2位<br>
+                                中学校・高等学校教員（保健体育・保健）<br>
+                            </p>
+                        </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="./img/sisidomei.jpg" alt="宍戸萌生" class="instructor_img">
+                        <div class="text">
+                            <span>
+                                実績
+                                <br>
+                            </span>
+                            <p class="p-txt">
+                                全国高等学校ダンスドリル選手権大会ミリタリー部門 優勝、総合2位<br>
+                                ソングリーディング部門 第2位<br>
+                                全日本チアダンス選手権大会大学生チアダンス部門優勝<br>
+                                全米学生チアダンス選手権大会　第2位<br>
+                                バレエリトミック講師養成講座 アシスタントコース修了
+                            </p>
+                        </div>
+                  </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+		</div>
+              <!-- swiper slide end -->
+    </section> 
+    <section id="question" class="question">
+        <div class="question_inner">
+            <h2 class="question_tit">
+                よくあるご質問
+            </h2>
+            <div id ="app1">
+                <div class="columns">
+                        <js-accordion id="accordion1" class="acoordions">
+                            <div slot="title" class="tit">
+                                <div class="q-num">
+                                    <p>Q1</p><hr>
+                                </div>
+                              <h3 class="q-num-title1">初めてでも<br>大丈夫ですか？</h3>
+                            </div>
+                            <div class="js-accordion--body" slot="body">
+                              <p>もちろん大丈夫です。<br>
+                                Gravisの会員さんのほとんどが<br>
+                                初めてからのスタートです。</p>
+                            </div>
+                          </js-accordion>
+                          <js-accordion id="accordion2" class="acoordions">
+                            <div slot="title" class="tit">
+                                <div class="q-num">
+                                    <p>Q2</p><hr>
+                                </div>
+                              <h3 class="q-num-title2">入会までの流れを<br>教えてください。</h3>
+                            </div>
+                            <div class="js-accordion--body" slot="body">
+                              <p>まずは体験レッスンを<br>
+                                ご予約くださませ。<br>
+                                初回1,000円で<br>
+                                ご受講いただけます。</p>
+                            </div>
+                          </js-accordion>
+                          <js-accordion id="accordion3" class="acoordions">
+                            <div slot="title" class="tit">
+                                <div class="q-num">
+                                    <p>Q3</p><hr>
+                                </div>
+                                
+                              <h3 class="q-num-title3">必要な費用は<br>いくらくらいですか？</h3>
+                            </div>
+                            <div class="js-accordion--body" slot="body">
+                              <p>最初の入会金、月々の月謝以外には、 所定の衣装代、Tシャツ代などがかかります。<br>
+                                 チアダンスクラスはオリジナルユニフォーム5,000円〜20,000円程度、<br>
+                                 ポンポン1,500円程度、 ヒップホップクラスはTシャツとパンツで5,000円程度となります。<br>
+                                 また、イベント参加費、レッスンやイベント出演時の交通費などは各自でご負担いただきます。</p>
+                            </div>
+                          </js-accordion>
+                          <js-accordion id="accordion4" class="acoordions">
+                            <div slot="title" class="tit">
+                                <div class="q-num">
+                                    <p>Q4</p><hr>
+                                </div>
+                              <h3 class="q-num-title4">送迎、見学について<br>教えてください。</h3>
+                            </div>
+                            <div class="js-accordion--body" slot="body">
+                              <p>レッスン中のご見学は、子どもたちの集中力を考慮し、最後の15分のみとさせていただいております。<br>
+                                レッスン前に送っていただいた後、お時間になりましたらお迎えをお願いします。<br>
+                                もちろん一人で通えるお子様は送迎は必要ありません。<br>
+                                必要な連絡などはお手紙、保護者様へ直接メールやお電話でお伝えいたします。</p>
+                            </div>
+                          </js-accordion>
+
+                          <js-accordion id="accodion5" class="acoordions">
+                            <div slot="title" class="tit">
+                                <div class="q-num">
+                                    <p>Q5</p><hr>
+                                </div>
+                              <h3 class="q-num-title5">普段のレッスン内容は？<br>人数は？</h3>
+                            </div>
+                            <div class="js-accordion--body" slot="body">
+                              <p>Gravisのレッスンでは、まずご挨拶をしてスタジオに入ってもらうところからスタートします。<br>
+                                →レッスンを受ける準備が出来たら、みんなで思いっきり遊びましょう。<br>
+                                →レッスン時間になったら、みんなでご挨拶します。<br>
+                                ・約15分〜20分 音楽に合わせてのウォーミングアップ<br>
+                                ・約15分〜20分 基礎練習（足のステップや手の動きなどを繰り返し練習します）<br>
+                                ・約20分〜30分 振付練習（年間で1〜2つの振付を覚えます）<br>
+                                →最後はクールダウン、ご挨拶をし、自分で片付けを行ってから帰ります。<br>
+                                ※1クラス 5名～15名ほどです。</p>
+                            </div>
+                          </js-accordion>
+                          <js-accordion id="accordion6" class="acoordions">
+                            <div slot="title" class="tit">
+                                
+                                <div class="q-num">
+                                    <p>Q6</p><hr>
+                                </div>
+                              <h3 class="q-num-title6">
+                                イベントには<br>どのくらい出ますか？
+                              </h3>
+                            </div>
+                            <div class="js-accordion--body" slot="body">
+                              <p>年に一度の集大成として、舞台での公演があります。<br>
+                                 また他には地域のお祭りや施設でのイベント、ご依頼を頂いたイベントに出演していきます。 <br>
+                                また大会チームは大会にも出場していきます。<br>
+                                スケジュールや地域により出演チームを決定しています。</p>
+                            </div>
+                          </js-accordion>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="form" class="form anchor">
+        <div class="form_header">
+            <div class="money_txt">
+                今なら
+                <span>1,000</span>
+                円で体験レッスン可能！
+            </div>
+            <h2 class="form_tit">
+                お問い合わせフォームはコチラ！
+            </h2>
+        </div>
+    <div class="form-body">
+        <div class="form-group display-flex">
+            <label class="display-flex-center font-size-5 font-weight-bold">
+                お名前
+                <span>(必須)</span>
+            </label>
+            <div class="form-input">
+                <input type="text" name="お名前" class="form-control mfp_element_text mfp_element_all problem problem problem problem problem problem problem problem problem mfp_defaultValue problem" placeholder="グラ ヴィス子" id="mfp_element_0">
+            </div>
+        </div>
+        <div class="form-group display-flex">
+            <label class="display-flex-center font-size-5 font-weight-bold">
+                電話番号
+                <span class="span1">(任意)</span>
+            </label>
+            <div class="form-input">
+                <input type="tel" name="電話番号" class="form-control mfp_element_tel mfp_element_all" placeholder="080-9452-4152" id="mfp_element_1">
+            </div>
+        </div>
+        <div class="form-group display-flex">
+            <label class="display-flex-center font-size-5 font-weight-bold">
+                メールアドレス
+                <span>(必須)</span>
+            </label>
+            <div class="form-input">
+                <input type="email" data-type="email" name="email" class="form-control mfp_element_email mfp_element_all" placeholder="gravis@tiadance.jp" id="mfp_element_2">
+            </div>
+        </div>
+        <div class="form-group display-flex">
+            <label class="display-flex-center font-size-5 font-weight-bold">
+                住所
+                <span>(必須)</span>
+            </label>
+            <div class="form-input">
+                <input type="text" name="住所" class="form-control mfp_element_text mfp_element_all mfp_defaultValue" placeholder="東京都町田市熊ケ谷2丁目1-27" id="mfp_element_3">
+            </div>
+        </div>
+    </div>
+        <div class="form-action text-center">
+            <button type="submit" class="font-size-25 font-weight-bold btn-gradient-blue mfp_element_submit mfp_element_all">
+                入力内容を確認する
+            </button>
+        </div>
+    </section>
+    </main>
+    <footer class="I-footer p-footer">
+        &copy;2019 Gravis inc.
+    </footer>
+    </div>
+    <script src="js/swiper.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        import VueReadMoreSmooth from "vue-road-more-smooth";
+        export default {
+        name: "19aw0104",
+        components: { VueReadMoreSmooth }
+        };
+    </script>
+</body>
+</html>
